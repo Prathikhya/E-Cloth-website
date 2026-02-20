@@ -30,3 +30,4 @@ node_modules/
 
 # server
 server/node_modules/
+.env
