@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <h1>BTS</h1>
-    <p>it is 18 feb jhope birthday</p>
+    
     </>
   )
 }
