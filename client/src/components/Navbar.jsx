@@ -10,6 +10,8 @@ const Navbar = () => {
     { name: 'Kids', link: '/kids' },
   ];
 
+
+  
   return (
 
       <div className="hidden md:flex items-center gap-6">
