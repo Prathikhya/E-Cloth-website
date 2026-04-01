@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 function NavbarMo() {
     const categories = [
+    {name: 'All', link: '/' },
     { name: 'Women', link: '/women' },
     { name: 'Men', link: '/men' },
     { name: 'Kids', link: '/kids' },

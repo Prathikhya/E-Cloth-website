@@ -8,7 +8,7 @@ import Collection from './pages/Collection'
 function App() {
   return (
     <>
-    <main className='mx-auto w-full max-w-7xl px-1 sm:px-6 lg:px-8'>
+    <main className='mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8'>
       <Headers />
     </main>
     <Routes>

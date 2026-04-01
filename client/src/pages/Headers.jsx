@@ -6,16 +6,17 @@ import { Search, ShoppingBag, User, Heart, Sun, Moon } from 'lucide-react';
 import NavbarMo from '@/components/NavbarMo';
 
 
+
 const Headers = () => {
 
-  const [isMobile, setIsMobile] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // State to manage dark mode
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-
+  // End to manage dark mode
 
   return (
     <header >
@@ -28,11 +29,12 @@ const Headers = () => {
         {/* desktop & tablet view */}
         <Navbar />
 
-        {/* search input */}
 
+        {/* search input */}
 
         <div className="flex items-center w-72 relative">
           <Search className="absolute left-3 h-4 w-4 text-muted-foreground" />
+          
           <input
             type="text"
             placeholder="Search products..."
@@ -64,13 +66,14 @@ const Headers = () => {
 
           <div>
             <Link to="/login" className="flex items-center gap-2 text-gray-600 hover:text-red-600">
-
               {/* Toggle between Sun and Moon icons based on the current theme */}
               {isDarkMode ? <Moon className="h-5 w-5"
                 onClick={toggleDarkMode} /> : <Sun className="h-5 w-5"
                   onClick={toggleDarkMode} />}
             </Link>
           </div>
+
+          
         </div>
 
       </div>
@@ -78,8 +81,6 @@ const Headers = () => {
 
       {/* mobile view */}
       <NavbarMo />
-
-
 
     </header>
   )
