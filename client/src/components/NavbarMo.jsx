@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react';
-
+import { NavLink } from 'react-router-dom';
+  
 
 function NavbarMo() {
     const categories = [
@@ -13,13 +12,13 @@ function NavbarMo() {
 
   return (
     
-         <div className="flex justify-evenly items-center gap-6 py-4 px-4 md:hidden">
+         <nav className="flex justify-between items-center gap-6 py-4 px-4 md:hidden">
         {categories.map((category) => (
-          <Link key={category.name} to={category.link} className="hover:text-red-600">
+          <NavLink key={category.name} to={category.link} className="hover:text-red-600">
             {category.name}
-          </Link>
+          </NavLink>
         ))}
-      </div>
+      </nav>
     
   )
 }
